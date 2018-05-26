@@ -15,11 +15,13 @@ It's currently only tested on Ubuntu 18.04 with X11, so please test on other des
 On any snap enabled Linux system:
 
 ```
-$ snap install reden
-$ reden.reden-qt
+$ snap install reden-cimm
+$ reden-cimm.reden-qt
 ```
 
-You can now see all installed applications by running `snap info reden`.
+You can now see all installed applications by running `snap info reden-cimm`.
+
+Note: the final package should obviously be names `reden` and not `reden-cimm` but I don't want to squat that name, I'll leave that up to the Reden team.
 
 # Building
 
@@ -31,7 +33,7 @@ From the root directory of this repository run:
 
 ```bash
 $ snapcraft cleanbuild
-$ snap install reden_0.1_amd64.snap --dangerous
+$ snap install reden-cimm_0.1_amd64.snap --dangerous
 ```
 
 You can use `snapcraft cleanbuild --debug` to be dropped in the container's shell if the build fails.
