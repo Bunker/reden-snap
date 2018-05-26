@@ -21,7 +21,7 @@ $ reden-cimm.reden-qt
 
 You can now see all installed applications by running `snap info reden-cimm`.
 
-Note: the final package should obviously be names `reden` and not `reden-cimm` but I don't want to squat that name, I'll leave that up to the Reden team.
+Note: the final package should obviously be named `reden` and not `reden-cimm` but I don't want to squat that name, I'll leave that up to the Reden team.
 
 # Building
 
@@ -40,6 +40,7 @@ You can use `snapcraft cleanbuild --debug` to be dropped in the container's shel
 
 # Known issues
 
+- You need to pick a custom data directory at first boot since the snap is confined and can't use the default one.
 - URL opening doesn't work on Ubuntu 18.04. This is a confirmed bug and has been fixed in snapd: https://github.com/snapcore/snapd/pull/4495
 - The reden-qt application icon is missing since it's not correctly specified in the Reden repository: https://github.com/RedenCore/Reden/blob/master/contrib/debian/reden-qt.desktop.desktop#L8
 - Starting reden-qt throws an AppArmor warning related to dbus, needs fixing.
