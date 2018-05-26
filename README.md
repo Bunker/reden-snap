@@ -1,12 +1,12 @@
 # Reden snap
 
-First shot at packaging `reden-cli`, `reden-tx`, `redend`, and `reden-qt` in a snap for easy installation on Linux systems.
+First shot at packaging `reden-cli`, `reden-tx`, `redend`, and `reden-qt` in a snap for easy installation on Linux systems. Check the [Reden repostory](https://github.com/RedenCore/Reden) for more information.
 
 It's currently only tested on Ubuntu 18.04 with X11, so please test on other desktop environments if you will.
 
-**DISCLAIMER**
-
-This repository is purely intended as an exercise in creating snap packages. Don't use this wallet to store crypto without a proper audit of both the snap and the upstream Reden repository. In other words: don't trust random code on the interwebs!
+> **DISCLAIMER**
+>
+> This repository is purely intended as an exercise in creating snap packages. Don't use this wallet to store crypto without a proper audit of both the snap and the upstream Reden repository. In other words: don't trust random code on the interwebs!
 
 # Installing
 
