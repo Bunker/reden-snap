@@ -2,7 +2,7 @@
 
 First shot at packaging `reden-cli`, `reden-tx`, `redend`, and `reden-qt` in a snap for easy installation on Linux systems. Check the [Reden repostory](https://github.com/RedenCore/Reden) for more information.
 
-The snap icon is a shameless copy of the Reden [splash image](https://raw.githubusercontent.com/RedenCore/Reden/master/splash.png).
+The snap icon is a shameless copy of the Reden [icon](https://github.com/RedenCore/Reden/blob/ddd856c784acc9416a949514d74a4ad38330fea0/share/pixmaps/reden256.png).
 
 It's currently only tested on Ubuntu 18.04 with X11, so please test on other desktop environments if you will.
 
