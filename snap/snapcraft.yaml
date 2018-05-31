@@ -74,3 +74,6 @@ parts:
       - libcanberra-gtk-module
       - libcanberra-gtk3-module
       - libgail-common
+      - libminiupnpc-dev
+      - libqrencode-dev
+      - libzmq3-dev
