@@ -26,7 +26,7 @@ apps:
 
   reden-qt:
     command: desktop-launch $SNAP/bin/reden-qt
-    desktop: ../snap/gui/reden-qt.desktop
+    desktop: reden-qt.desktop
     plugs:
       - desktop
       - x11
@@ -48,6 +48,10 @@ parts:
       - desktop-qt5
     source: https://github.com/RedenCore/Reden.git
     source-depth: 1
+    override-build: |
+      snapcraftctl build
+      cp contrib/debian/reden-qt.desktop.desktop $SNAPCRAFT_PART_INSTALL/reden-qt.desktop
+      sed -i -e 's/Icon=reden128/Icon=${SNAP}\/meta\/gui\/reden-qt.png/; s/reden-qt.desktop/Reden Core/' $SNAPCRAFT_PART_INSTALL/reden-qt.desktop
     build-packages:
       - bsdmainutils
       - libboost-chrono-dev
