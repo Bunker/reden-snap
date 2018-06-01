@@ -1,10 +1,19 @@
 # Reden snap
 
-First shot at packaging `reden-cli`, `reden-tx`, `redend`, and `reden-qt` in a snap for easy installation on Linux systems. Check the [Reden repostory](https://github.com/RedenCore/Reden) for more information.
-
-The snap icon is a shameless copy of the Reden [icon](https://github.com/RedenCore/Reden/blob/ddd856c784acc9416a949514d74a4ad38330fea0/share/pixmaps/reden256.png).
+Snap pacakge for the `reden-cli`, `reden-tx`, `redend`, and `reden-qt` binaries for easy installation on Linux systems. Check the [Reden repostory](https://github.com/RedenCore/Reden) for more information about the Reden project.
 
 It's currently only tested on Ubuntu 18.04 with X11, so please test on other desktop environments if you will.
+
+<details>
+  <summary>What is Reden?</summary>
+  <p>Reden is a fully decentralised cryptocurrency built on the premise of providing anonymity, speed, fair mining by being ASIC-resistant and reliability by the usage of masternodes.</p>
+</details>
+
+<details>
+  <summary>What is a snap?</summary>
+  <p>Snaps are containerised software packages that are simple to create and install. They auto-update and are safe to run. And because they bundle their dependencies, they work on all major Linux systems without modification.</p>
+</details>
+
 
 > **DISCLAIMER**
 >
@@ -15,7 +24,7 @@ It's currently only tested on Ubuntu 18.04 with X11, so please test on other des
 On any snap enabled Linux system:
 
 ```
-$ snap install reden-cimm
+$ snap install reden-cimm --edge
 $ reden-cimm.reden-qt
 ```
 
@@ -42,5 +51,8 @@ You can use `snapcraft cleanbuild --debug` to be dropped in the container's shel
 
 - You need to pick a custom data directory at first boot since the snap is confined and can't use the default one.
 - URL opening doesn't work on Ubuntu 18.04. This is a confirmed bug and has been fixed in snapd: https://github.com/snapcore/snapd/pull/4495
-- The reden-qt application icon is missing since it's not correctly specified in the Reden repository: https://github.com/RedenCore/Reden/blob/master/contrib/debian/reden-qt.desktop.desktop#L8
 - Starting reden-qt throws an AppArmor warning related to dbus, needs fixing.
+
+# License
+
+This repository is licensed under the [MIT license](LICENSE). The Reden application icon is a cropped copy of the [splash.png](https://github.com/RedenCore/Reden/blob/master/splash.png) image from the [Reden project](https://github.com/RedenCore/Reden) and also MIT licensed.
