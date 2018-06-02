@@ -51,7 +51,6 @@ You can use `snapcraft cleanbuild --debug` to be dropped in the container's shel
 # Known issues
 
 - Starting reden-qt throws an AppArmor warning related to dbus. This is [fixed](https://github.com/snapcore/snapd/pull/5189) in `snapd` so should resolved itself in a future `snapd` release.
-- URL opening doesn't work on Ubuntu 18.04. This is a confirmed bug and has been fixed in snapd: https://github.com/snapcore/snapd/pull/4495
 
 # License
 
