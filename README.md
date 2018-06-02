@@ -14,6 +14,7 @@ It's currently only tested on Ubuntu 18.04 with X11, so please test on other des
   <p>Snaps are containerised software packages that are simple to create and install. They auto-update and are safe to run. And because they bundle their dependencies, they work on all major Linux systems without modification.</p>
 </details>
 
+<hr/>
 
 > **DISCLAIMER**
 >
@@ -49,8 +50,8 @@ You can use `snapcraft cleanbuild --debug` to be dropped in the container's shel
 
 # Known issues
 
+- Starting reden-qt throws an AppArmor warning related to dbus. This is [fixed](https://github.com/snapcore/snapd/pull/5189) in `snapd` so should resolved itself in a future `snapd` release.
 - URL opening doesn't work on Ubuntu 18.04. This is a confirmed bug and has been fixed in snapd: https://github.com/snapcore/snapd/pull/4495
-- Starting reden-qt throws an AppArmor warning related to dbus, needs fixing.
 
 # License
 
