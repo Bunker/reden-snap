@@ -48,6 +48,7 @@ parts:
       - desktop-qt5
     source: https://github.com/RedenCore/Reden.git
     source-depth: 1
+    configflags: [--disable-tests, --disable-bench]
     override-build: |
       snapcraftctl build
       cp contrib/debian/reden-qt.desktop.desktop $SNAPCRAFT_PART_INSTALL/reden-qt.desktop
@@ -75,9 +76,17 @@ parts:
       - qttools5-dev-tools
     stage-packages:
       - libatk-adaptor
+      - libboost-chrono1.58.0
+      - libboost-program-options1.58.0
+      - libboost-thread1.58.0
       - libcanberra-gtk-module
       - libcanberra-gtk3-module
+      - libdb4.8
+      - libdb4.8++
+      - libevent-2.0-5
+      - libevent-pthreads-2.0-5
       - libgail-common
-      - libminiupnpc-dev
-      - libqrencode-dev
-      - libzmq3-dev
+      - libminiupnpc10
+      - libprotobuf9v5
+      - libqrencode3
+      - libzmq5

@@ -49,7 +49,6 @@ You can use `snapcraft cleanbuild --debug` to be dropped in the container's shel
 
 # Known issues
 
-- You need to pick a custom data directory at first boot since the snap is confined and can't use the default one.
 - URL opening doesn't work on Ubuntu 18.04. This is a confirmed bug and has been fixed in snapd: https://github.com/snapcore/snapd/pull/4495
 - Starting reden-qt throws an AppArmor warning related to dbus, needs fixing.
 
